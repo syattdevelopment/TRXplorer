@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_blockchain"
+            android:icon="@drawable/ic_blocks"
+            android:title="@string/blockchain" />
+        <item
+            android:id="@+id/nav_nodes"
+            android:icon="@drawable/ic_nodes"
+            android:title="@string/nodes" />
+        <item
+            android:id="@+id/nav_representatives"
+            android:icon="@drawable/ic_reps"
+            android:title="@string/reps" />
+        <item
+            android:id="@+id/nav_tokens"
+            android:icon="@drawable/ic_tokens"
+            android:title="@string/tokens" />
+        <item
+            android:id="@+id/nav_markets"
+            android:icon="@drawable/ic_charts"
+            android:title="@string/markets" />
+        <item
+            android:id="@+id/nav_votes"
+            android:icon="@drawable/ic_votes"
+            android:title="@string/votes" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+    </group>
+
+    <item android:title="@string/tools">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_transaction_viewer"
+                    android:icon="@drawable/ic_transaction_viewer"
+                    android:title="@string/transaction_viewer" />
+                <item
+                    android:id="@+id/nav_node_tester"
+                    android:icon="@drawable/ic_node_tester"
+                    android:title="@string/node_tester" />
+                <item
+                    android:id="@+id/nav_system"
+                    android:icon="@drawable/ic_system"
+                    android:title="@string/system" />
+            </group>
+        </menu>
+    </item>
+</menu>

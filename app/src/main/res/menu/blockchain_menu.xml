@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_blocks"
+        android:icon="@drawable/ic_blocks"
+        android:title="@string/blocks" />
+
+    <item
+        android:id="@+id/action_transactions"
+        android:icon="@drawable/ic_transactions"
+        android:title="@string/transactions" />
+
+    <item
+        android:id="@+id/action_transfers"
+        android:icon="@drawable/ic_transfers"
+        android:title="@string/transfers" />
+
+    <item
+        android:id="@+id/action_accounts"
+        android:icon="@drawable/ic_accounts"
+        android:title="@string/accounts" />
+</menu>
