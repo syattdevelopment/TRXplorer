@@ -14,6 +14,7 @@ public class QueryDataService extends AsyncTask<String, String, String> {
     public static final String TAG = QueryDataService.class.getSimpleName();
 
     private QueryDataListener mListener;
+    private String mUrl;
 
     public QueryDataService(QueryDataListener listener) {
         mListener = listener;
@@ -30,7 +31,8 @@ public class QueryDataService extends AsyncTask<String, String, String> {
         HttpURLConnection httpURLConnection;
 
         try {
-            url = new URL(strings[0]);
+            mUrl = strings[0];
+            url = new URL(mUrl);
             httpURLConnection = (HttpURLConnection) url.openConnection();
             int responseCode = httpURLConnection.getResponseCode();
 
@@ -48,7 +50,7 @@ public class QueryDataService extends AsyncTask<String, String, String> {
     protected void onPostExecute(String response) {
         super.onPostExecute(response);
         if (response != null) {
-            mListener.onResponse(response);
+            mListener.onResponse(response, mUrl);
         } else {
             mListener.onError();
         }

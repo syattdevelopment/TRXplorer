@@ -38,4 +38,7 @@
     <string name="accounts">Accounts</string>
     <string name="live">Live</string>
     <string name="clear">Clear</string>
+    <string name="average_block_size">Average Block Size</string>
+    <string name="network_connection_error">Network Connection Error</string>
+    <string name="retry">Retry</string>
 </resources>

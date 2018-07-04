@@ -6,10 +6,28 @@
     android:background="@color/colorBackgroundGrey"
     tools:context=".fragments.SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundGrey"
+            android:padding="@dimen/dimen_12dp"
+            tools:context=".fragments.HomeFragment">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_350dp"
+                android:layout_margin="@dimen/dimen_8dp"
+                card_view:cardCornerRadius="@dimen/dimen_4dp">
+
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>

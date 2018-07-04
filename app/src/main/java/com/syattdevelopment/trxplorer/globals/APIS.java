@@ -19,4 +19,5 @@ public class APIS {
     public static final String CURRENT_CYCLE_URL = "https://api.tronscan.org/api/vote/current-cycle";
     public static final String NEXT_CYCLE_URL = "https://api.tronscan.org/api/vote/next-cycle";
     public static final String SYSTEM_URL = "https://api.tronscan.org/api/system/status";
+    public static final String BLOCK_SIZE_URL = "https://api.tronscan.org/api/block/stats?info=avg-block-size";
 }

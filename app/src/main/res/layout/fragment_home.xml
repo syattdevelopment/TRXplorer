@@ -14,39 +14,171 @@
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_price"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="4dp">
+            android:layout_height="@dimen/dimen_350dp"
+            android:layout_margin="@dimen/dimen_4dp"
+            card_view:cardCornerRadius="@dimen/dimen_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:background="@color/colorDivider" />
+
+                </RelativeLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/price_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_weight="3" />
+
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_recent_blocks"
+            android:id="@+id/card_accounts"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="@dimen/dimen_350dp"
             android:layout_below="@+id/card_price"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="4dp">
+            android:layout_margin="@dimen/dimen_8dp"
+            card_view:cardCornerRadius="@dimen/dimen_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:background="@color/colorDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_weight="3">
+
+                    <ListView
+                        android:id="@+id/list_recent_blocks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_recent_transfers"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:layout_below="@+id/card_recent_blocks"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="4dp">
+            android:layout_height="@dimen/dimen_350dp"
+            android:layout_below="@+id/card_accounts"
+            android:layout_margin="@dimen/dimen_8dp"
+            card_view:cardCornerRadius="@dimen/dimen_4dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:background="@color/colorDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_weight="3">
+
+                    <ListView
+                        android:id="@+id/list_recent_transfers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_nodes"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="@dimen/dimen_350dp"
             android:layout_below="@+id/card_recent_transfers"
-            android:layout_margin="4dp"
-            card_view:cardCornerRadius="4dp">
+            android:layout_margin="@dimen/dimen_8dp"
+            card_view:cardCornerRadius="@dimen/dimen_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:background="@color/colorDivider" />
+
+                </RelativeLayout>
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/nodes_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:layout_weight="3" />
+
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
 

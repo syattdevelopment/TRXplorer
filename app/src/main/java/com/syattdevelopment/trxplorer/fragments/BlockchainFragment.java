@@ -52,7 +52,7 @@ public class BlockchainFragment extends Fragment implements BottomNavigationView
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_blocks:
-                mBlocksFragment = BlocksFragment.getInstance();
+                mBlocksFragment = BlocksFragment.getInstance(mContext);
                 getChildFragmentManager().beginTransaction().replace(R.id.container, mBlocksFragment, BlocksFragment.TAG).commit();
                 return true;
             case R.id.action_transactions:

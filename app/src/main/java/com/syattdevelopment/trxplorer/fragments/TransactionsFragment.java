@@ -8,17 +8,26 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.syattdevelopment.trxplorer.R;
 import com.syattdevelopment.trxplorer.globals.APIS;
 import com.syattdevelopment.trxplorer.listeners.QueryDataListener;
+import com.syattdevelopment.trxplorer.models.transactions.TransactionData;
 import com.syattdevelopment.trxplorer.services.QueryDataService;
 
-public class TransactionsFragment extends Fragment implements QueryDataListener {
+public class TransactionsFragment extends Fragment implements QueryDataListener, View.OnClickListener {
     public static final String TAG = TransactionsFragment.class.getSimpleName();
 
     private QueryDataService mService;
     private int mPage;
+    private TransactionData mTransactionData;
+
+    private RelativeLayout mData;
+    private RelativeLayout mProgress;
+    private RelativeLayout mError;
+
+    private Trans
 
     public TransactionsFragment() {
         // Required empty public constructor
@@ -46,7 +55,17 @@ public class TransactionsFragment extends Fragment implements QueryDataListener 
     }
 
     @Override
+    public void onResponse(String response, String url) {
+
+    }
+
+    @Override
     public void onError() {
+
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 }

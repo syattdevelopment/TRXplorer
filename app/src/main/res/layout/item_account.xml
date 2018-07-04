@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_8dp">
+
+    <TextView
+        android:id="@+id/balance_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance:"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balance_label"
+        android:text="2,345 TRX"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

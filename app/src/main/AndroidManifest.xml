@@ -24,6 +24,10 @@
         <activity
             android:name=".activities.SearchActivity"
             android:theme="@style/SearchAppTheme" />
+        <activity android:name=".activities.BlockDetailsActivity" />
+        <activity android:name=".activities.AccountDetailsActivity" />
+        <activity android:name=".activities.TransferActivity" />
+        <activity android:name=".activities.TransactionDetailsActivity"></activity>
     </application>
 
 </manifest>

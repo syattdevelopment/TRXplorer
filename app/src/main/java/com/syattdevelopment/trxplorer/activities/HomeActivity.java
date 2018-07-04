@@ -16,13 +16,10 @@ import com.syattdevelopment.trxplorer.R;
 import com.syattdevelopment.trxplorer.fragments.BlockchainFragment;
 import com.syattdevelopment.trxplorer.fragments.HomeFragment;
 import com.syattdevelopment.trxplorer.fragments.MarketsFragment;
-import com.syattdevelopment.trxplorer.fragments.NodeTesterFragment;
 import com.syattdevelopment.trxplorer.fragments.NodesFragment;
 import com.syattdevelopment.trxplorer.fragments.RepresentativesFragment;
 import com.syattdevelopment.trxplorer.fragments.SettingsFragment;
-import com.syattdevelopment.trxplorer.fragments.SystemFragment;
 import com.syattdevelopment.trxplorer.fragments.TokensFragment;
-import com.syattdevelopment.trxplorer.fragments.TransactionViewerFragment;
 import com.syattdevelopment.trxplorer.fragments.VotesFragment;
 
 public class HomeActivity extends AppCompatActivity
@@ -41,9 +38,6 @@ public class HomeActivity extends AppCompatActivity
     private MarketsFragment mMarketsFragment;
     private VotesFragment mVotesFragment;
     private SettingsFragment mSettingsFragment;
-    private TransactionViewerFragment mTransactionViewerFragment;
-    private NodeTesterFragment mNodeTesterFragment;
-    private SystemFragment mSystemFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,24 +127,6 @@ public class HomeActivity extends AppCompatActivity
             setTitle(getResources().getString(R.string.settings));
             getSupportFragmentManager().beginTransaction().replace(R.id.container,
                     mSettingsFragment, SettingsFragment.TAG).commit();
-        } else if (id == R.id.nav_transaction_viewer) {
-            mTransactionViewerFragment = TransactionViewerFragment.getInstance();
-            mNavigationView.getMenu().findItem(id).setChecked(true);
-            setTitle(getResources().getString(R.string.transaction_viewer));
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                    mTransactionViewerFragment, TransactionViewerFragment.TAG).commit();
-        } else if (id == R.id.nav_node_tester) {
-            mNodeTesterFragment = NodeTesterFragment.getInstance();
-            mNavigationView.getMenu().findItem(id).setChecked(true);
-            setTitle(getResources().getString(R.string.node_tester));
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                    mNodeTesterFragment, NodeTesterFragment.TAG).commit();
-        } else if (id == R.id.nav_system) {
-            mSystemFragment = SystemFragment.getInstance();
-            mNavigationView.getMenu().findItem(id).setChecked(true);
-            setTitle(getResources().getString(R.string.system));
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                    mSystemFragment, SystemFragment.TAG).commit();
         } else if (id == R.id.nav_home) {
             mHomeFragment = HomeFragment.getInstance();
             setTitle(getResources().getString(R.string.home));

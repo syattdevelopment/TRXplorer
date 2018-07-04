@@ -37,23 +37,4 @@
             android:icon="@drawable/ic_settings"
             android:title="@string/settings" />
     </group>
-
-    <item android:title="@string/tools">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/nav_transaction_viewer"
-                    android:icon="@drawable/ic_transaction_viewer"
-                    android:title="@string/transaction_viewer" />
-                <item
-                    android:id="@+id/nav_node_tester"
-                    android:icon="@drawable/ic_node_tester"
-                    android:title="@string/node_tester" />
-                <item
-                    android:id="@+id/nav_system"
-                    android:icon="@drawable/ic_system"
-                    android:title="@string/system" />
-            </group>
-        </menu>
-    </item>
 </menu>
